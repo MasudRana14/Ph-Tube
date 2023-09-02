@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- DaisyUi Cdn Link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blog</title>
+  <link rel="shortcut icon" href="./img/blog.png" type="image/x-icon">
+</head>
+
+<body class="container mx-auto">
+  <header>
+    <!-- nav Bar  -->
+    <nav class="mt-3">
+      <div class="navbar bg-gray-200 px-5">
+        <div class="navbar-start">
+          <img src="./img/Logo.png" alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal gap-2">
+            <li class="font-bold"><a>About</a></li>
+            <li class="font-bold"><a>Contact</a></li>
+            <li class="font-bold"><a>More Blog's</a></li>
+
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a onclick="goHomeButton()" class="btn btn-success">Go Home</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto mb-32">
+    <!-- Discuss the scope of var, let, and const -->
+    <section class="w-3/4 mx-auto">
+
+      <h1 class="text-3xl mt-10 text-green-600 font-bold">Discuss the scope of var, let, and const</h1>
+
+      <div class="collapse collapse-arrow bg-base-200 mt-8">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Var
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-fuchsia-600 font-medium">var has the function or global scope.It gets hoisted to the
+            top of its scope and initialized undefined.It can be updated or re-declared.It's an old way to declare a
+            variable.Can be declared without initialization.Can be accessed without initialization as its default value
+            is “undefined”.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Let
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-pink-600 font-medium">let's have the block scope.It also got hoisted to the top of its
+            scope but didn't initialize.It can only be updated and can't be re-declared.It's a new way to declare
+            variables introduced in ES6.Can be declared without initialization.Cannot be accessed without
+            initialization, leading to ‘referenceError’.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Const
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-purple-700 font-medium">const variable has the block scope.It also got hoisted to the
+            top of its scope but didn't initialize.It can't be updated or re-declared.It's also a new way to declare a
+            variable, which introduces in ES6.Cannot be declared without initialization.Cannot be accessed without
+            initialization, as it cannot be declared without initialization in the first place.</p>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+
+
+
+    <!-- Tell us the use cases of null and undefined -->
+    <section class="w-3/4 mx-auto mt-20 ">
+
+      <h1 class="text-3xl mt-10 text-amber-700 font-bold">Tell us the use cases of null and undefined</h1>
+
+      <div class="collapse collapse-arrow bg-base-200 mt-8">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Null
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-blue-700 font-medium">null is a special value in JavaScript that represents the
+            intentional absence of any object value. It is often used when you want to explicitly set a variable to have
+            no value or when an object property should be empty.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Undefined
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-sky-800 font-medium">undefined is another special value in JavaScript that represents a
+            variable that has not been assigned a value. When you declare a variable without assigning any value to it,
+            JavaScript automatically assigns the value undefined.</p>
+        </div>
+      </div>
+      </div>
+      <hr>
+    </section>
+
+
+    <!-- What do you mean by REST API? -->
+    <section class="w-3/4 mx-auto mt-20">
+
+      <h1 class="text-3xl mt-10 text-violet-800 font-bold">What do you mean by REST API?</h1>
+
+      <div class="collapse collapse-arrow bg-base-200 mt-8">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Api
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-amber-800 font-medium">API stands for Application Programming Interface. An API
+            establishes a connection between programs so they can transfer data.
+            A program that has an API implies that some parts of its data is exposed for the client to use. The client
+            could be the frontend of the same program or an external program.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          REST
+        </div>
+        <div class="collapse-content">
+          <p class="text-xl text-orange-600 font-medium">REST stands for REpresentational State Transfer. It is a
+            standard that guides the design and development of processes which enable us interact with data stored on a
+            web servers.</p>
+        </div>
+      </div>
+      </div>
+      <hr>
+    </section>
+  </main>
+  <script src="js/style.js"></script>
+</body>
+
+</html>
